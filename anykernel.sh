@@ -4,9 +4,9 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=vauxite
-kernel.compiler=AOSP clang
-kernel.made=CHRISL7
+kernel.string=MyKernel
+kernel.compiler=Neutron clang
+kernel.made=ahmadkhan-git
 message.word=
 do.devicecheck=1
 do.modules=0
@@ -15,7 +15,7 @@ do.cleanup=1
 do.cleanuponabort=0
 device.name1=spes
 device.name2=spesn
-supported.versions=13.0-15.0
+supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
@@ -30,7 +30,7 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 
 # boot shell variables
 block=boot;
-is_slot_device=auto;
+is_slot_device=1;
 ramdisk_compression=auto;
 patch_vbmeta_flag=auto;
 
